@@ -17,6 +17,10 @@ header {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -44,6 +48,7 @@ nav ul li a:hover {
     display: none;
     padding: 2rem;
     animation: fadeEffect 1s;
+    margin-top: 5rem;
 }
 
 @keyframes fadeEffect {
@@ -76,28 +81,43 @@ section {
     text-align: center;
 }
 
-#projects {
-    background: #e2e2e2;
+.introduction, .expertise, .achievements, .publications, .call-to-action {
+    background: #fff;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 2rem 0;
+.introduction p, .expertise ul, .achievements ul, .publications ul, .call-to-action p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
 }
 
-table, th, td {
-    border: 1px solid #ddd;
+.expertise ul, .achievements ul, .publications ul {
+    list-style-type: none;
 }
 
-th, td {
-    padding: 0.5rem;
-    text-align: left;
+.expertise ul li, .achievements ul li, .publications ul li {
+    padding: 0.5rem 0;
 }
 
-th {
-    background: #4CAF50;
-    color: #fff;
+.expertise ul li:before, .achievements ul li:before {
+    content: '•';
+    color: #4CAF50;
+    margin-right: 0.5rem;
+}
+
+.publications ul li a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.publications ul li a:hover {
+    color: #333;
 }
 
 footer {
