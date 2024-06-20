@@ -1,7 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script defer src="script.js"></script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="tablinks" onclick="openTab(event, 'home')"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about" class="tablinks" onclick="openTab(event, 'about')"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#projects" class="tablinks" onclick="openTab(event, 'projects')"><i class="fas fa-briefcase"></i> Projects</a></li>
+                <li><a href="#contact" class="tablinks" onclick="openTab(event, 'contact')"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="home" class="tabcontent">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hello, I'm [Your Name]</h1>
+                <p>Welcome to my portfolio website</p>
+            </div>
+        </section>
+    </div>
+    
+    <div id="about" class="tabcontent">
+        <section>
+            <h2>About Me</h2>
+            <p>[Your detailed bio goes here]</p>
+        </section>
+    </div>
+    
+    <div id="projects" class="tabcontent">
+        <section>
+            <h2>Projects</h2>
+            <table>
+                <tr>
+                    <th>Project Title</th>
+                    <th>Description</th>
+                    <th>Link</th>
+                </tr>
+                <!-- Repeat this block for each project -->
+                <tr>
+                    <td>Project 1</td>
+                    <td>Short project description</td>
+                    <td><a href="[project-url]" target="_blank">View Project</a></td>
+                </tr>
+                <tr>
+                    <td>Project 2</td>
+                    <td>Short project description</td>
+                    <td><a href="[project-url]" target="_blank">View Project</a></td>
+                </tr>
+                <!-- End of project block -->
+            </table>
+        </section>
+    </div>
+    
+    <div id="contact" class="tabcontent">
+        <section>
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me at <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
 </body>
 </html>
